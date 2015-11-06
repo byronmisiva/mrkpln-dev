@@ -1,0 +1,70 @@
+'featured_slider_heading' => array('id' => 'featured_slider_heading',
+'section'=>'wpeden_homepage_settings',
+'label'=>'Homepage Header Settings',
+'name' => 'featured_slider_heading',
+'type' => 'heading'
+),
+'home_featured_image' => array('id' => 'home_featured_image',
+'section'=>'wpeden_homepage_settings',
+'label'=>'Image URL',
+'name' => 'wpeden_homepage_settings[home_featured_image]',
+'type' => 'callback',
+'value' => wpeden_get_theme_opts('home_featured_image'),
+'validate' => 'url',
+'dom_callback' => 'wpeden_site_logo',
+'dom_callback_params' => array('name'=>'wpeden_homepage_settings[home_featured_image]','id'=>'home_featured_image','selected'=>wpeden_get_theme_opts('home_featured_image'))
+),
+
+'home_featured_title' => array('id' => 'home_featured_title',
+'section'=>'wpeden_homepage_settings',
+'label'=>'Headline',
+'name' => 'wpeden_homepage_settings[home_featured_title]',
+'type' => 'text',
+'value' => wpeden_get_theme_opts('home_featured_title'),
+'validate' => 'str'
+),
+
+'home_featured_desc' => array('id' => 'home_featured_desc',
+'section'=>'wpeden_homepage_settings',
+'label'=>'Description',
+'name' => 'wpeden_homepage_settings[home_featured_desc]',
+'type' => 'textarea',
+'value' => wpeden_get_theme_opts('home_featured_desc'),
+'validate' => 'str'
+),
+
+'home_featured_btntxt' => array('id' => 'home_featured_btntxt',
+'section'=>'wpeden_homepage_settings',
+'label'=>'Button Text',
+'name' => 'wpeden_homepage_settings[home_featured_btntxt]',
+'type' => 'text',
+'value' => wpeden_get_theme_opts('home_featured_btntxt'),
+'validate' => 'str'
+),
+
+'home_featured_btnurl' => array('id' => 'home_featured_btnurl',
+'section'=>'wpeden_homepage_settings',
+'label'=>'Button URL',
+'name' => 'wpeden_homepage_settings[home_featured_btnurl]',
+'type' => 'text',
+'value' => wpeden_get_theme_opts('home_featured_btnurl'),
+'validate' => 'str'
+),
+
+'home_featured_btntxt1' => array('id' => 'home_featured_btntxt1',
+'section'=>'wpeden_homepage_settings',
+'label'=>'2nd Button Text',
+'name' => 'wpeden_homepage_settings[home_featured_btntxt1]',
+'type' => 'text',
+'value' => wpeden_get_theme_opts('home_featured_btntxt1'),
+'validate' => 'str'
+),
+
+'home_featured_btnurl1' => array('id' => 'home_featured_btnurl1',
+'section'=>'wpeden_homepage_settings',
+'label'=>'2nd Button URL',
+'name' => 'wpeden_homepage_settings[home_featured_btnurl1]',
+'type' => 'text',
+'value' => wpeden_get_theme_opts('home_featured_btnurl1'),
+'validate' => 'str'
+),
