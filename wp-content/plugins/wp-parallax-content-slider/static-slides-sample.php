@@ -45,11 +45,10 @@ function markplan_carousel()
             <h2><a href="<?php echo get_permalink($file->ID); ?>"><?php echo $file->post_title; ?></a></h2>
 
             <p><a href="<?php echo get_permalink($file->ID); ?>"><?php echo $file->post_content; ?></a></p>
-            <div class="da-link">
-            <a href="<?php echo get_permalink($file->ID); ?>"><?php echo $read_more; ?></a>
-            </div>
-            <div class="da-img">
-                <a href="<?php echo get_permalink($file->ID); ?>"><?php wpdm_thumb($file->ID, array(300, 200)); ?></a>
+            <a href="<?php echo get_permalink($file->ID); ?>" class="da-link"><?php echo $read_more; ?></a>
+
+            <div class="da-img"><a
+                    href="<?php echo get_permalink($file->ID); ?>"><?php wpdm_thumb($file->ID, array(300, 200)); ?></a>
             </div>
         </div>
         <?php
@@ -57,17 +56,3 @@ function markplan_carousel()
 }
 
 ?>
-
-<div class="da-slide da-slide-toleft" style="display: none;">
-    <h2><a href="http://demo.wpdownloadmanager.com/wpdmpro/wpdm-package/jumper/" class="font-effect-shadow-multiple">Jumper</a></h2>
-    <p>
-        Jumper – Single Page Responsive Website Template
-
-        Provided By http://scripteden.com/...
-    </p>
-    <div class="da-link">
-        <a class="btn btn-bordered" href="http://demo.wpdownloadmanager.com/wpdmpro/wpdm-package/jumper/">Continue to Download...</a>
-    </div>
-    <div class="da-img">
-        <img src="http://demo.wpdownloadmanager.com/wpdmpro/wp-content/uploads/2013/12/091-350x300.jpg" alt="" class="">                    </div>
-</div>

@@ -48,7 +48,7 @@ msgstr "Subir archivo(s) del PC"
 #: c:\xampp\htdocs\wpdmpro33x\wp-content\plugins\download-manager/add-new-file-front.php:352
 #: c:\xampp\htdocs\wpdmpro33x\wp-content\plugins\download-manager/add-new-file.php:901
 msgid "Drop files here"
-msgstr ""
+msgstr "Arrastre los archivos"
 
 #: c:\xampp\htdocs\wpdmpro33x\wp-content\plugins\download-manager/add-new-file-front.php:372
 #: c:\xampp\htdocs\wpdmpro33x\wp-content\plugins\download-manager/add-new-file.php:921
@@ -83,6 +83,8 @@ msgstr "Acciones"
 #, fuzzy
 msgid "Filename"
 msgstr "Usuario"
+
+
 
 #: c:\xampp\htdocs\wpdmpro33x\wp-content\plugins\download-manager/add-new-file.php:484
 #: c:\xampp\htdocs\wpdmpro33x\wp-content\plugins\download-manager/functions.php:1769

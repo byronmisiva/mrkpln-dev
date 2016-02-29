@@ -1,7 +1,6 @@
 /*global ajaxurl, isRtl */
 var wpWidgets;
 (function($) {
-	var $document = $( document );
 
 wpWidgets = {
 
@@ -23,13 +22,10 @@ wpWidgets = {
 			} else {
 				$wrap.addClass('closed');
 			}
-
-			$document.triggerHandler( 'wp-pin-menu' );
 		});
 
 		$('#widgets-left .sidebar-name').click( function() {
 			$(this).closest('.widgets-holder-wrap').toggleClass('closed');
-			$document.triggerHandler( 'wp-pin-menu' );
 		});
 
 		$(document.body).bind('click.widgets-toggle', function(e) {
@@ -70,9 +66,7 @@ wpWidgets = {
 				wpWidgets.save( target.closest('div.widget'), 1, 1, 0 );
 				e.preventDefault();
 			} else if ( target.hasClass('widget-control-close') ) {
-				widget = target.closest('div.widget');
-				widget.removeClass( 'open' );
-				wpWidgets.close( widget );
+				wpWidgets.close( target.closest('div.widget') );
 				e.preventDefault();
 			}
 		});
@@ -93,7 +87,7 @@ wpWidgets = {
 			distance: 2,
 			helper: 'clone',
 			zIndex: 100,
-			containment: '#wpwrap',
+			containment: 'document',
 			start: function( event, ui ) {
 				var chooser = $(this).find('.widgets-chooser');
 
@@ -123,7 +117,7 @@ wpWidgets = {
 			handle: '> .widget-top > .widget-title',
 			cursor: 'move',
 			distance: 2,
-			containment: '#wpwrap',
+			containment: 'document',
 			start: function( event, ui ) {
 				var height, $this = $(this),
 					$wrap = $this.parent(),
@@ -178,7 +172,7 @@ wpWidgets = {
 
 					wpWidgets.save( $widget, 0, 0, 1 );
 					$widget.find('input.add_new').val('');
-					$document.trigger( 'widget-added', [ $widget ] );
+					$( document ).trigger( 'widget-added', [ $widget ] );
 				}
 
 				$sidebar = $widget.parent();
@@ -237,7 +231,7 @@ wpWidgets = {
 			},
 			drop: function(e,ui) {
 				ui.draggable.addClass('deleting');
-				$('#removing-widget').hide().children('span').empty();
+				$('#removing-widget').hide().children('span').html('');
 			},
 			over: function(e,ui) {
 				ui.draggable.addClass('deleting');
@@ -251,7 +245,7 @@ wpWidgets = {
 			out: function(e,ui) {
 				ui.draggable.removeClass('deleting');
 				$('div.widget-placeholder').show();
-				$('#removing-widget').hide().children('span').empty();
+				$('#removing-widget').hide().children('span').html('');
 			}
 		});
 
@@ -325,7 +319,7 @@ wpWidgets = {
 		};
 
 		if ( sidebarId ) {
-			$( '#' + sidebarId ).find( '.spinner:first' ).addClass( 'is-active' );
+			$( '#' + sidebarId ).find('.spinner:first').css('display', 'inline-block');
 		}
 
 		$('div.widgets-sortables').each( function() {
@@ -335,7 +329,7 @@ wpWidgets = {
 		});
 
 		$.post( ajaxurl, data, function() {
-			$( '.spinner' ).removeClass( 'is-active' );
+			$('.spinner').hide();
 		});
 	},
 
@@ -344,7 +338,7 @@ wpWidgets = {
 			data = widget.find('form').serialize(), a;
 
 		widget = $(widget);
-		$( '.spinner', widget ).addClass( 'is-active' );
+		$('.spinner', widget).show();
 
 		a = {
 			action: 'save-widget',
@@ -381,11 +375,11 @@ wpWidgets = {
 					widget.remove();
 				}
 			} else {
-				$( '.spinner' ).removeClass( 'is-active' );
+				$('.spinner').hide();
 				if ( r && r.length > 2 ) {
 					$( 'div.widget-content', widget ).html( r );
 					wpWidgets.appendTitle( widget );
-					$document.trigger( 'widget-updated', [ widget ] );
+					$( document ).trigger( 'widget-updated', [ widget ] );
 				}
 			}
 			if ( order ) {
@@ -450,7 +444,7 @@ wpWidgets = {
 		// No longer "new" widget
 		widget.find( 'input.add_new' ).val('');
 
-		$document.trigger( 'widget-added', [ widget ] );
+		$( document ).trigger( 'widget-added', [ widget ] );
 
 		/*
 		 * Check if any part of the sidebar is visible in the viewport. If it is, don't scroll.
@@ -493,6 +487,6 @@ wpWidgets = {
 	}
 };
 
-$document.ready( function(){ wpWidgets.init(); } );
+$(document).ready( function(){ wpWidgets.init(); } );
 
 })(jQuery);

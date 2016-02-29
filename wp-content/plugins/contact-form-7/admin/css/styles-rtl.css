@@ -1,34 +1,21 @@
-.tag-generator-panel {
+div.save-contact-form {
+	direction: rtl;
+}
+
+div.actions-link {
+	right: auto;
+	left: 0;
+}
+
+div.tg-pane table caption {
 	text-align: right;
 }
 
-.tag-generator-panel .control-box > fieldset legend {
-	border: 1px solid #dfdfdf;
-	border-right: 4px solid #00a0d2;
+div.tg-dropdown {
+	left: auto;
+	right: 0;
 }
 
-.tag-generator-panel .insert-box input.tag {
-	float: right;
-}
-
-.tag-generator-panel .insert-box .submitbox input[type="button"] {
-	float: left;
-}
-
-.card {
-	border-left: 1px solid #e5e5e5;
-	border-right: 4px solid #e5e5e5;
-}
-
-.card img.icon {
-	float: right;
-	margin: 8px -8px 8px 8px;
-}
-
-.card h3.title {
-	float: right;
-}
-
-.card .infobox {
-	float: left;
+div.wrap div.cf7com-links {
+	text-align: left;
 }

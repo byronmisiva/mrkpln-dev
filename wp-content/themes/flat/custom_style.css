@@ -1,99 +1,5 @@
 @CHARSET "ISO-8859-1";
 
-/*************************/
-/*LANDING-*
-/*************************/
-		.texto1{
-			font-size: 23px;
-		    font-weight: 100;
-		    line-height: 0;
-		    margin-top: 5%;
-		    padding-left: 5%;
-		    width: 480px;
-		   font-family: Roboto;
-		   font-weight: 100;
-		   font-style: normal;	
-		   color:#ffffff;
-		   margin-bottom: 20px;
-		}
-		
-		.texto2{		
-			font-size: 25px;
-		    font-weight: 300;
-		    padding-left: 5%;
-		    padding-bottom: 8%;	
-		    font-family: Roboto;		    
-		    font-style: normal;
-		    color:#ffffff;		    
-		}
-		
-		.fondocuadro{
-			  background-color: rgba(0, 0, 0, 0.5) !important;
-    border: medium none;
-    border-radius: 0 !important;
-    color: #fff;
-    float: none;
-    height: auto;
-    margin: 0 80%;
-    width: 584px;
-		}
-
-.img-llave{
- background-image: url("http://www.markplan.com/wp-content/uploads/2015/03/llave.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    float: left;
-    height: 26px;
-    width: 35px;
-}
-
-.site-description{
-display:none !important;
-}
-
-.header-cliente{
-    width: 100% !important;
-}
-
-.header-cliente .image-wrap{
-    width: 100% !important;
-}
-
-
-.header-cliente .image-wrap img{
-    width: 100% !important;
-}
-
-#layout #content {
-    margin-top: 0 !important;
-    padding: 0 !important;
-}
-
-.pagewidth, .section-inner {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 1024px;
-}
-
-.logo{
-	margin-top: 10%;
-	padding-bottom: 12px;
-	padding-left: 5%;
-}
-
-#header a {
-    color: rgba(255, 255, 255, 1);
-}
-
-#layout{
-	  background-image: url("/imagenes/pattern.png"), linear-gradient(rgba(255,255,255,0.2), transparent);			  
-			  width: 100%;
-			  height: 100%;
-			  position: absolute;
-			}
-/*********************/
-
 .post-edit-link{
 display:none;
 }
@@ -102,14 +8,25 @@ body{
 	font-family:Comfortaa;
 }
 
+
+
 div.wpcf7-validation-errors {
     border: medium none;
     color: #ffffff;
     font-family: Helvetica;
 }
 
+.label{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
 input[type="reset"], input[type="submit"], button {
     text-transform: none !important;
+}
+
+accordion .accordion-content {
+	color: #fff;
 }
 
 
@@ -150,6 +67,12 @@ background-color: #ffffff;
 border: none;
 }
 
+#header hgroup{
+z-index:10000;
+position: absolute;
+bottom: auto !important;
+}
+
 .hoja-vida:active {
   outline: 0;
 }
@@ -157,9 +80,7 @@ border: none;
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
 }
 
-.row-slider-slides{
-	display:none !important;
-}
+
 
 #btn-carga{
 	   /*background-color: #ffffff !important;
@@ -175,14 +96,26 @@ border: none;
     display: block;
     font-family: Helvetica;
     height: 45px;
-    position: absolute;
-    width: 115px;
+    /*position: absolute;*/
+    width: 250px;
     z-index: 100;
+    
+    /*background-color: #ffffff !important;
+border: medium none;
+color: #282828;
+display: inline-block;
+font-family: Helvetica;
+height: 45px;
+position: absolute;
+width: 250px;
+z-index: 100;
+left: 25px;*/
+    
 }
 
 .hoja-vida{
 	/*display: none;*/
-	 display: block;
+	 display: none;
 }
 
 #headerwrap {
@@ -197,10 +130,7 @@ border: none;
 	width: 100%;
 }
 
-.text-disfrutamos{    
-    margin-bottom: 0;
-    padding-left:10%;
-	}
+
 
 
 #site-logo {
@@ -244,16 +174,13 @@ border: none;
 }
 
 #main-nav {
-    margin: 15px 0;
+    margin: 15px 0 0;
     padding: 0;
 }
 
-.text-disfrutamos{
-	 color: #ffffff;
-    font-family: Comfortaa;
-    font-size: 20pt;
-    line-height: 20px;
+.text-disfrutamos{    
     margin-bottom: 0;
+    padding-left:10%;
 	}
 
 #main-nav a {
@@ -267,11 +194,16 @@ border: none;
 }
 
 .highlight.loops-wrapper.grid4 .post-title, .highlight.loops-wrapper.grid3 .post-title, .highlight.loops-wrapper.grid2 .post-title {
-    font-family: Roboto;
+    font-family: Comfortaa;
     font-size: 14pt !important;
     margin: 0 !important;
     text-transform: none;
      color: #000;
+}
+
+p {
+	font-family: Roboto;
+    color:#444444 !important;
 }
 
 .fondo-home{
@@ -279,32 +211,35 @@ border: none;
 	width:400px;
 }
 
-.contenedor-home{
-	
-}
-
-.contenedor-texto-agencia{
-
-}
 .franja-contacto{
 	height:300px;
 }
 
+#main-nav a {	
+	font-size: 14px;
+}
+
 .texto-agencia{
-   margin-bottom: 20px;
-    margin-top: 110px;
+    margin-bottom: 0;
+    margin-top: 80px;
     text-align: justify;
 }
 
-.contenedor-imagen-agencia{
-	
+.texto-agencia p{
+   font-family: Roboto; 
 }
+
+p {
+color:#444444 !important;
+}
+
+
 
 .texto-marketing{
     float: right;
     height: 190px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 180px;
+    margin-top: 180px;
     width: 100%;
 }
 
@@ -315,8 +250,8 @@ border: none;
 }
 
 .contenedor-slide-confianza{
-	  background-position: left top !important;
-    height: 300px !important;
+    background-position: left top !important;
+    height: 600px !important;
     width: 100% !important;
 
 }
@@ -334,7 +269,7 @@ border: none;
 
 .contenedor-texto-contactos{
 	margin: 0 auto; 
-	width: 94%;;
+	width: 100%;
 }
 
 .opcion1{
@@ -348,8 +283,8 @@ div.wpcf7-mail-sent-ok {
 }
 
 .opcion2{
-	float: left;
-    margin-left: 200px;
+	float: right;
+	margin-left: 0;
 }
 
 .imagen-derecho{
@@ -365,7 +300,11 @@ div.wpcf7-mail-sent-ok {
 
 .col.first, .col4-1.first, .col4-2.first, .col4-3.first, .col3-1.first, .col3-2.first {
     clear: left;
-    margin-left: 12%;
+    margin-left: 0%;
+}
+
+.col4-3 {
+width: 100%;
 }
 
 .themify_builder .fullcover {
@@ -433,24 +372,27 @@ input[type="text"], input[type="search"], input[type="email"] {
     margin-bottom: 0; 
 }
 
+
+
 .imagen-derecha-contacto{
 	display:none;
 }
 
 .row-slider-slides{
 	display:block;
+	background: rgba(0,0,0,0.5);
 }
 
 p {
-    font-size: 14px;
-    line-height: 16px;
-    margin: 0.2em 0 2em;
-    padding: 0;
+    font-size: 16px;
+line-height: 18px;
+margin: 0 0 0;
+padding: 0;
     color: #000;
 }
 .titulo-textos-informativo{
     color: #000000;
-    font-family: Roboto;
+	font-family: Comfortaa !important;;
     font-size: 20pt;
     margin-bottom: 20px;
     padding-top: 0;
@@ -469,76 +411,9 @@ p {
     font-family: Comfortaa;
     font-size: 20pt;
     height: auto;
-    margin-bottom: 0;
+	margin-bottom: 20px;
     margin-top: 0;
 }
-
-.forma-login-personalizado{
-	padding:0;
-}
-
-.forma-login-personalizado ul{
-	padding:0;
-        margin:0;
-}
-
-.forma-login-personalizado ul li{
-        margin-bottom:10px;
-	width:300px !important;
-}
-
-.forma-login-personalizado ul li .box-text{
-	width:294px !important;
-}
-
-.forma-login-personalizado ul li .btn-ingreso{
-	width:140px !important;
-}
-
-.texto-mayor{
-	height: 45px; margin-bottom: 40px; text-align: left;
-        padding-left: 5%;
-}
-.texto1-formato{
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 74pt;
-    font-weight: 600;
-    height: 75px;
-    padding-top: 0;
-    vertical-align: top;
-}
-
-.texto2-formato{
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 70pt;
-    font-style: normal;
-    font-weight: 400;
-    margin-left: 10px;
-    padding-top: 15px !important;
-}
-
-.texto3-formato{
-    float: left;
-    color: #ffffff;
-    font-family: Roboto;
-    font-size: 55pt;
-    font-weight: 100;
-}
-
-.texto4-formato{
-    float: left;
-    color: #ffffff;
-    font-family: Roboto;
-    font-size: 55pt;
-    font-weight: 600;
-    margin-left: 10px;
-    height: 60px;
-}
-
 
 .edit-button {
     clear: both;
@@ -578,7 +453,7 @@ p {
 }
 
 input[type="reset"], input[type="submit"], button {
-    background: none repeat scroll 0 0 #ff7f5e;
+    background: none repeat scroll 0 0 #ffffff;
     border: medium none;
     border-radius: 0;
     color: #282828;
@@ -589,11 +464,18 @@ input[type="reset"], input[type="submit"], button {
     transition: all 0.3s ease 0s;
 }
 
+.ui .tab-content, .ui.window .content, .ui.module-accordion .accordion-content {
+    color: #fff;
+}
+
 input[type="text"], input[type="password"], textarea, input[type="search"], input[type="email"] {
     background: none repeat scroll 0 0 #eee;
     border: medium none;
     border-radius: 0;
     padding: 10px;
+    width:100%;
+margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 
@@ -617,35 +499,157 @@ input[type="text"], input[type="password"], textarea, input[type="search"], inpu
 .row-slider-nav{
 	display:none;
 }
-
-.acceso-login ul li .accordion-title a{
-    padding-left: 24px !important;
-    width: 70% !important;
-}
-
-.acceso-login ul li .accordion-title .flecha-acordeon{
-    display:none !important;
-}
    
+.forma-login-personalizado{
+	padding:0;
+}
+
+.forma-login-personalizado ul{
+	padding:0;
+        margin:0;
+}
+
+.forma-login-personalizado ul li{
+        margin-bottom:10px;
+	width:300px !important;
+}
+
+.forma-login-personalizado ul li .box-text{
+	width:294px !important;
+}
+
+.forma-login-personalizado ul li .btn-ingreso{
+	width:140px !important;
+}
+
+.texto-mayor{
+	height: 45px; margin-bottom: 40px; text-align: left;
+        padding-left: 5%;
+}
+
+.texto1-formato{
+    color: #ffffff;
+float: left;
+font-family: Roboto;
+font-size: 73pt;
+font-weight: 600;
+height: 90px;
+padding-top: 0;
+vertical-align: top;
+}
+
+.texto5-formato{
+  color: #111;
+float: left;
+font-family: Roboto;
+font-size: 55pt;
+font-weight: 600;
+height: 50px;
+padding-top: 0;
+vertical-align: top;
+}
+
+/*.loops-wrapper.grid4 .post-image, .loops-wrapper.grid3 .post-image, .loops-wrapper.grid2 .post-image {
+float: none;
+margin: 0 auto;
+width: 130px;
+}*/
+
+.texto6-formato{
+	color: #555;
+float: left;
+font-family: Roboto;
+font-size: 33pt;
+font-style: normal;
+font-weight: 300;
+margin-left: 10px;
+padding-top: 2px !important;
+height: 50px;
+text-transform: lowercase;
+}
+
+.texto7-formato{
+	color: #fff;
+float: left;
+font-family: Roboto;
+font-size: 55pt;
+font-weight: 200;
+height: 70px;
+padding-top: 19px;
+vertical-align: top;
+}
+
+.texto8-formato{
+color: #333;
+float: left;
+font-family: Roboto;
+font-size: 70pt;
+font-weight: 600;
+height: 70px;
+padding-top: 12px;
+vertical-align: top;
+}
+
+
+
+.texto2-formato{
+    color: #ffffff;
+    float: left;
+    font-family: Roboto;
+    font-size: 71pt;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 10px;
+    padding-top: 15px !important;
+    height: 80px;
+}
+
+.texto3-formato{
+    float: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 55pt;
+    font-weight: 100;
+}
+
+.texto4-formato{
+    float: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 55pt;
+    font-weight: 600;
+    margin-left: 10px;
+    height: 60px;
+}
+
+.contenedor-slide-confianza-mobile{
+	display:none !important;
+}
+
+input { 
+	-webkit-appearance: none; 
+	border-radius: 0; 
+	}
+
 
 @media screen and (max-width: 1800px) {
 .texto-marketing {
     float: right;
     height: 190px;
-    margin-bottom: 220px;
-    margin-top: 150px;
+    margin-bottom: 170px;
+    margin-top: 160px;
     width: 100%;
 }
 
 .texto-nuestro-trabajo {
     float: left;
-    margin-bottom: 210px;
-    margin-top: 150px;
+     margin-bottom: 110px;
+    margin-top: 110px;
 }
 
 .contenedor-slide-confianza {
     background-position: left top !important;
-    height: 600px !important;
+    height: 500px !important;
     width: 100% !important;
 }
 
@@ -657,22 +661,19 @@ input[type="text"], input[type="password"], textarea, input[type="search"], inpu
 }
 
 @media screen and (max-width: 1400px) {
-   .texto-marketing{
-	margin-bottom: 150px;
-        margin-top: 130px;
-   }
-  
-  .texto-nuestro-trabajo {    
-    margin-bottom: 160px;
-    margin-top: 150px;
-  }
-
-.contenedor-slide-confianza {
-    background-position: left top !important;
-    height: 475px !important;
-    width: 100% !important;
+.texto-marketing {
+    float: right;
+    height: 190px;
+    margin-bottom: 165px;
+    margin-top: 165px;
+    width: 100%;
 }
 
+
+.module-highlight .highlight-post .post-image img {
+width: 100px !important;
+}
+  
 .contenedor-slide-confianza {
     background-position: left top !important;
     height: 475px !important;
@@ -684,9 +685,133 @@ input[type="text"], input[type="password"], textarea, input[type="search"], inpu
     	padding-top: 50px;
 }
 
+
+.texto-nuestro-trabajo {
+	margin: 7% auto 7% 10%;
+}
+
+.texto7-formato {
+	font-size: 56pt;
+	padding-top: 14px;
+}
+
+.texto5-formato {
+	font-size: 40pt;
+}
+
+.texto8-formato {
+	font-size: 55pt;
+	}
+
+
+
+.titulo-textos-informativo {
+padding-top: 20px;
+}
+
+.titulo-servicios {
+padding-top: 15px;
+}
+
+.titulo-textos-informativo {
+padding-top: 10px;
+}
+
+}
+
+@media screen and (max-width: 1281px) {
+.themify_builder_content-2415>.module_row_0.module_row {
+background-image: url(https://markplan.misiva.com.ec/wp-content/uploads/2014/10/homepagefinal1.jpg) !important; 
+background-position:center;
+}
+
+.row-slider-nav {
+	display: block;
+}
+
+.builder-is-touch .row-slider-slides {
+display: none;
+}
+
+.row-slider-dot, .row-slider-arrow {
+background: transparent !important;
+}
+
 }
 
 
+@media screen and (max-width: 1240px) {
+	.post-image img {
+		border-radius: 5px;
+		width: 120px;
+	}	
+	
+	.texto-nuestro-trabajo {
+		margin-bottom: 80px;
+		margin-top: 80px;
+		}
+		
+		.texto5-formato {
+		font-size: 50pt;
+		}
+		
+		.texto8-formato {
+		font-size: 65pt;
+		}
+
+.themify_builder_content-2415>.module_row_0.module_row {
+background-image: url(https://markplan.misiva.com.ec/wp-content/uploads/2014/10/homepagefinal1.jpg) !important; 
+background-position:center;
+}
+}
+
+@media screen and (max-width: 1025px) {
+	.contenedor-slide-confianza {
+	 	height: 350px !important;
+	}
+
+.col4-3 {
+	width: 90%;
+	margin-left: 5% !important;
+}	
+
+.texto-agencia {
+margin-top: 80px;
+
+}
+
+.contenedor-slide-confianza {
+height: 450px !important;
+}
+
+.themify_builder_content-2415>.module_row_0.module_row {
+background-image: url(https://markplan.misiva.com.ec/wp-content/uploads/2014/10/homepagefinal1.jpg) !important; 
+background-size: cover;
+font-family: Arial,Helvetica,sans-serif;
+text-align: right;
+color: #fff;
+background-position:center;
+}
+
+.titulo-servicios {
+padding-top: 10px;
+}
+
+.titulo-textos-informativo {
+padding-top: 25px;
+}
+
+.texto-informatico-contacto {
+margin-top: 80px;
+}
+
+.row-slider-dot, .row-slider-arrow {
+background: transparent !important;
+}
+
+}
+
+ 
 @media screen and (max-width: 1100px) {
 	.pagewidth,
 	.sidebar-none .loops-wrapper.list-post .section-inner,
@@ -713,73 +838,32 @@ input[type="text"], input[type="password"], textarea, input[type="search"], inpu
 	    text-align: left !important;
 	    width: 90% !important;
 	}
+.row-slider-dot, .row-slider-arrow {
+background: transparent !important;
 }
 
-@media screen and (max-width: 820px) {
-.texto-mayor {
-    height: 45px;
-    margin-bottom: 40px;
-    padding-left: 0;
-    text-align: left;
 }
+
+@media screen and (max-width: 901px) {
+.contenedor-slide-confianza {
+    height: 350px !important;
+}	
+
+
 .texto1-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 60pt;
-    font-weight: 600;
-    height: 75px;
-    padding-top: 0;
-    vertical-align: top;
+    font-size: 34pt;
 }
-
 
 .texto2-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 50pt;
-    font-style: normal;
-    font-weight: 400;
-    margin-left: 5px;
-    padding-top: 10px !important;
+    font-size: 55pt; 
 }
 
-
-.texto3-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 45pt;
-    font-weight: 100;
+#main-nav a {  
+    padding: 10px 10px 7px;
 }
-
-.texto4-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 45pt;
-    font-weight: 600;
-    height: 60px;
-    margin-left: 10px;
 }
-
-.text-disfrutamos {
-    color: #ffffff;
-    font-family: Comfortaa;
-    font-size: 20pt;
-    line-height: 20px;
-    margin-bottom: 0;
-}
-
-}
-
 
 @media screen and (max-width: 780px) {
-.img-llave {
-    float: right;
-}
-
 	.imagen-derecho{
 		float:right;
 		display:none;
@@ -804,7 +888,7 @@ input[type="text"], input[type="password"], textarea, input[type="search"], inpu
     border-radius: 0;
     clear: both;
     margin-left: -110px;
-    margin-top: 59px;
+    margin-top: 0;
     padding: 10px 12px;
     position: absolute !important;
     right: 0;
@@ -815,7 +899,7 @@ input[type="text"], input[type="password"], textarea, input[type="search"], inpu
 .contenedor-slide-confianza {
     background-position: left top !important;
     background-size: 100% 100% !important;
-    height: 500px !important;
+    height: 300px !important;
     width: 100% !important;
 }
 
@@ -853,8 +937,6 @@ input[type="text"], input[type="password"], textarea, input[type="search"], inpu
     width: 90%;
 }
 
-
-
 nav {
     position: fixed;
     top: 10px;
@@ -889,6 +971,7 @@ nav {
     text-align: right;
     text-transform: none;
     width: auto !important;
+    text-transform: none !important;
 }
 
 .row-slider-slides{
@@ -955,7 +1038,7 @@ nav {
 
 .contenedor-redes-izq {
     margin: 5% auto;
-    width: 30%;
+	width: 40%;
 }
 
 
@@ -979,69 +1062,199 @@ nav {
 
 .contenedor-texto-contactos {
     margin: 0 auto;
-    width: 40%;
+	width: 70%;
+}
+
+.texto1-formato { 
+    font-size: 29pt;
+}
+
+.texto2-formato { 
+    font-size: 46pt;
+}
+
+
+.texto5-formato {
+    font-size: 35pt;
+    height: 50px;
+}
+
+.texto6-formato {
+    color: #111; 
+    font-size: 35pt;
+    height: 55px;
+    margin-left: 5px;
+    padding-top: 0 !important;
+    text-transform: lowercase;
+}
+
+.texto7-formato {
+    font-size: 50pt;
+    height: 50px;
+    padding-top: 13px;
+}
+
+.texto8-formato {
+    font-size: 54pt;
+    font-weight: 600;
+    height: 90px;
+    padding-top: 12px; 
+}
+
+#main-nav a {  
+    padding: 10px 10px 7px;
+}
+}
+
+@media screen and (max-width: 730px) {
+.texto1-formato { 
+    font-size: 20pt;
+}
+
+.texto2-formato { 
+    font-size: 32pt;
+}
+
+p {
+  
+    font-size: 14px;
+    line-height: 16px;  
+    padding: 0 10px;
+    text-align: justify;
+    color:#444444;
+}
+}
+
+
+@media screen and (max-width: 440px) {
+	
+	.contenedor-slide-confianza-mobile{
+		display:block !important;
+		height: 300px !important;
+	}
+	.contenedor-slide-confianza-mobile >
+	.row_inner{
+	height: 300px;
+	}
+	
+	.slider2{
+		width: 100%;
+		height: 150px;
+		vertical-align: middle;
+	}
+	
+	.contenedor-slide-confianza{
+		height: 150px !important;
+		display:none !important;
+	}
+	
+	
+.texto-agencia p {
+	font-family: Roboto;
+	margin-bottom: 15px !important;
+}
+
+
+.img-llave {
+background-image: url(https://markplan.misiva.com.ec/wp-content/uploads/2014/11/llave.png);
+background-position: center -8px;
+background-repeat: no-repeat;
+cursor: pointer;
+float: right !important;
+height: 20px;
+width: 35px;
+}
+
+.themify_builder_content-2415>.module_row_0.module_row {
+	background-position: 53% center;
+}
+
+.texto-nuestro-trabajo {
+	margin-left: 2%;
+	width: 96%;
 }
 
 .texto-mayor {
-    height: 45px;
-    margin-bottom: 40px;
-    padding-left: 0;
-    text-align: left;
+height: auto;
+margin-bottom: 40px;
+text-align: left;
+padding-left: 5%;
 }
-
 
 .texto1-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 55pt;
-    font-weight: 600;
-    height: 75px;
-    padding-top: 0;
-    vertical-align: top;
+	font-size: 20pt;
+height: auto;
 }
-
 
 .texto2-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 50pt;
-    font-style: normal;
-    font-weight: 400;
-    margin-left: 10px;
-    padding-top: 5px !important;
+	font-size: 26pt;
+height: auto;
+margin-top: 0 !important;
+padding: 0 !important;
+float: left;
+
 }
-
-
 
 .texto3-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 40pt;
-    font-weight: 100;
+float: left;
+color: #ffffff;
+font-family: Roboto;
+font-size: 28pt;
+font-weight: 100;
+height: auto;
 }
-
 
 .texto4-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 45pt;
-    font-weight: 600;
-    height: 60px;
-    margin-left: 10px;
+float: left;
+color: #ffffff;
+font-family: Roboto;
+font-size: 33pt;
+font-weight: 600;
+margin-left: 0;
+height: auto;
+margin-top: 32px;
 }
 
+p {
+padding: 0 20px;
+}
+
+.texto6-formato {
+color: #fff;
+font-size: 33pt;
+height: 50px;
+margin-left: 0px;
+}
+
+.texto7-formato {
+font-size: 40pt;
+height: 30px;
+padding-top: 0px;
+}
+
+.texto8-formato {
+font-size: 33pt;
+font-weight: 600;
+height: 90px;
+padding-top: 19px;
+}
+.module_row_0.module_row {
+    background-image: url("https://markplan.misiva.com.ec/wp-content/uploads/2015/11/mobileimagen.jpg") !important;
+    color: #fff;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: right;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+	.texto-agencia {
+		padding-top: 25px;
+	}
+	
 }
 
 @media screen and (max-width: 400px) {
-
-.img-llave {
-    float: right;
-}
-
 .contenedor-redes-izq {
     margin: 5% auto;
     width: 35%;
@@ -1050,7 +1263,7 @@ nav {
 
 .contenedor-texto-contactos {    
     margin: 0 auto;
-    width: 50%;
+   width: 70%;
 }
 
 .opcion1 {
@@ -1073,6 +1286,39 @@ nav {
     margin-left: 0;
     width: 100%;
 }
+
+.texto5-formato {
+    color: #000; 
+    font-size: 28pt; 
+    height: 13px;
+}
+
+.texto6-formato { 
+    color: #fff;
+    font-size: 25pt;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+    padding-top: 0 !important;
+    text-transform: lowercase;
+}
+
+.texto7-formato { 
+    font-size: 25pt;
+    height: 35px;
+    padding-top: 15px;
+}
+
+.texto8-formato {
+    color: #000;
+    font-size: 28pt;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0 !important;
+}
+
+
 	}
 
 @media screen and (max-width: 400px) {
@@ -1125,7 +1371,7 @@ body {
     color: #ffffff;
     float: left;
     font-family: Roboto;
-    font-size: 23pt;
+    font-size: 20pt;
     font-style: normal;
     font-weight: 400;
     margin-left: 0;
@@ -1142,13 +1388,14 @@ body {
 }
 
 .texto4-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 25pt;
-    font-weight: 600;
-    height: 30px;
-    margin-left: 0;
+color: #ffffff;
+float: left;
+font-family: Roboto;
+font-size: 25pt;
+font-weight: 600;
+height: 30px;
+padding-top: 0px !important;
+margin-top: 0;
 }
 
 .mobile-button {
@@ -1198,23 +1445,27 @@ body {
     margin-right: 5%;
     width: 90%;
 }
-
-.texto-nuestro-trabajo {
-    float: left;
-    margin-bottom: 100px;
-    margin-left: 5%;
-    margin-top: 100px;
-    width: 90%;
+.texto-marketing p{
+    color: #ffffff !important;
+    font-family: Comfortaa !important;
+    font-size: 40pt !important;
+    height: auto !important;
+    margin-bottom: 35px !important;
 }
 
-.texto-informatico-contacto {
-    margin-bottom: 10px;
-    margin-left: 5%;
-    margin-top: 80px;
-    width: 90%;
+.texto1-formato {    
+    font-size: 24pt;
+    height: auto;
 }
 
+.texto2-formato {    
+    font-size: 24pt;
+    height: auto;   
+}
 
+.texto3-formato { 
+    margin-top: 5px!important;
+}
 
 nav {
     position: fixed;
@@ -1332,6 +1583,14 @@ nav {
     width: 90%;
 }
 
+.texto-nuestro-trabajo {
+    float: left;
+    margin-bottom: 42px;
+    margin-left: 0;
+    margin-top: 45px;
+    width: 100%;
+}
+
 .contenedor-final-derechos {
     padding-bottom: 5px;
     padding-top: 5px;
@@ -1358,29 +1617,16 @@ nav {
     width: 90%;
 }
 
-
-
-.texto-nuestro-trabajo {
-    float: left;
-    margin-bottom: 42px;
-    margin-left: 5%;
-    margin-top: 45px;
-    width: 90%;
-}
-
 input[type="reset"], input[type="submit"], button {
     background-color: #ffffff;
     border: medium none;    
-    border-radius: 0;
+    border-radius: 0 !important;
     color: #282828;
     cursor: pointer;
     padding: 7px 20px;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
 }
-
-
-
 
 .themify_builder .accordion-2415-9-0-0 .ui.module-accordion .accordion-title a {
     background-color: #000 !important;
@@ -1393,10 +1639,8 @@ textarea {
 }
 
 #headerwrap {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 1); 
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6); 
 }
-
-
 
 .text-disfrutamos{
 	 color: #ffffff;
@@ -1434,104 +1678,142 @@ textarea {
     width: 8%;
 }
 
-#headerwrap #main-nav {
-    position: absolute !important;
-    top: 67px;
-    width: 100%;
+.img-llave {
+    background-image: url("https://markplan.misiva.com.ec/wp-content/uploads/2014/11/llave.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    width: 35px;
 }
 
-#main-nav a {
-    background-color: transparent;
+.texto6-formato {
+	font-size: 28pt;
+	height: auto;
+	margin-left: 0;
 }
-#main-nav a {
-    display: block;
+
+.texto8-formato {
+color: #000;
+font-size: 26pt;
+height: auto;
+margin-left: 5px;
+margin-top: 0;
+padding-top: 0 !important;
+}
+
+}
+
+
+@media screen and (max-width: 361px){
+	
+	input[type="reset"], input[type="submit"], button {        
+    	border-radius: 0 !important;
+	}
+	
+texto1-formato {
+    color: #ffffff;
+    float: left;
     font-family: Roboto;
-    font-size: 0.9em;
-    letter-spacing: 1px;
-    padding: 10px 20px 7px;
-    text-decoration: none;
-    text-transform: none;
-}
-#header a {
-    color: rgba(255, 255, 255, 1);
-}
-a {
-    outline: medium none;
-    transition: all 0.3s ease 0s;
-}
-html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset, figure {
-    margin: 0;
-}
-#main-nav li {
-    list-style: none outside none;
-}
-ul, ol {
-    line-height: 140%;
-}
-#header {
-    text-align: right;
-}
-body {
-    word-wrap: break-word;
-}
-nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
+    font-size: 25pt;
+    font-weight: 600;
+    height: 30px;
+    padding-top: 0;
 }
 
-#headerwrap #main-nav {
-    position: absolute !important;
-    top: 67px;
+.texto2-formato {
+    color: #ffffff;
+    float: left;
+    font-family: Roboto;
+    font-size: 20pt;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 0;
+    padding-top: 0 !important;
+}
+
+.texto3-formato {
+    color: #ffffff;
+    float: left;
+    font-family: Roboto;
+    font-size: 25pt;
+    font-weight: 100;
+    height: 35px;
+}
+
+.texto4-formato {
+color: #ffffff;
+float: left;
+font-family: Roboto;
+font-size: 25pt;
+font-weight: 600;
+height: 30px;
+padding-top: 0px !important;
+margin-top: 0;
 }
 
 }
+
 
 @media screen and (max-width: 321px){
-.texto2-formato {
-    color: #ffffff;
-    float: left;
-    font-family: Roboto;
-    font-size: 23pt;
-    font-style: normal;
-    font-weight: 400;
-    height: 28px;
-    margin-left: 0;
-    padding-top: 5px !important;
-}
 
 .texto2-formato {
     color: #ffffff;
     float: left;
     font-family: Roboto;
-    font-size: 22pt;
     font-style: normal;
     font-weight: 400;
-    height: 28px;
     margin-left: 0;
-    padding-top: 5px !important;
+    padding-top: 0 !important;
+    height: 35px;
+    font-size: 20pt !important;
 }
 
 .texto1-formato {
     color: #ffffff;
     float: left;
     font-family: Roboto;
-    font-size: 23pt;
+    font-size: 20pt;
     font-weight: 600;
     height: 30px;
     padding-top: 0;
 }
 
+.texto5-formato {
+    color: #000; 
+    font-size: 28pt; 
+    height: 13px;
 }
 
+.texto6-formato { 
+    color: #fff;
+    font-size: 25pt;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+    padding-top: 0 !important;
+    text-transform: lowercase;
+}
 
+.texto7-formato { 
+    font-size: 25pt;
+    height: 35px;
+    padding-top: 15px;
+}
 
+.texto8-formato {
+    color: #000;
+    font-size: 28pt;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0 !important;
+}
 
+.contenedor-slide-confianza {
+    height: 120px !important;
+    
+}
 
-
-
-
-
-
-
-
+}

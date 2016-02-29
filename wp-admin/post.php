@@ -23,7 +23,7 @@ elseif ( isset( $_POST['post_ID'] ) )
 else
  	$post_id = $post_ID = 0;
 
-global $post_type, $post_type_object, $post;
+$post = $post_type = $post_type_object = null;
 
 if ( $post_id )
 	$post = get_post( $post_id );
@@ -95,9 +95,7 @@ if ( ! $sendback ||
 		$sendback = admin_url( 'upload.php' );
 	} else {
 		$sendback = admin_url( 'edit.php' );
-		if ( ! empty( $post_type ) ) {
-			$sendback = add_query_arg( 'post_type', $post_type, $sendback );
-		}
+		$sendback .= ( ! empty( $post_type ) ) ? '?post_type=' . $post_type : '';
 	}
 } else {
 	$sendback = remove_query_arg( array('trashed', 'untrashed', 'deleted', 'ids'), $sendback );
@@ -115,9 +113,8 @@ case 'post-quickdraft-save':
 	if ( ! wp_verify_nonce( $nonce, 'add-post' ) )
 		$error_msg = __( 'Unable to submit this form, please refresh and try again.' );
 
-	if ( ! current_user_can( 'edit_posts' ) ) {
-		exit;
-	}
+	if ( ! current_user_can( 'edit_posts' ) )
+		$error_msg = __( 'Oops, you don&#8217;t have access to add new drafts.' );
 
 	if ( $error_msg )
 		return wp_dashboard_quick_press( $error_msg );
@@ -160,7 +157,6 @@ case 'edit':
 		wp_die( __( 'You can&#8217;t edit this item because it is in the Trash. Please restore it and try again.' ) );
 
 	if ( ! empty( $_GET['get-post-lock'] ) ) {
-		check_admin_referer( 'lock-post_' . $post_id );
 		wp_set_post_lock( $post_id );
 		wp_redirect( get_edit_post_link( $post_id, 'url' ) );
 		exit();

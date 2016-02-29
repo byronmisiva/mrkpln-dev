@@ -44,7 +44,9 @@ $ui_class = implode(' ', array( 'ui', 'module-' . $mod_name, $layout_accordion, 
 	<ul class="<?php echo $ui_class; ?>">
 		<?php foreach ( $content_accordion as $content ): ?>
 		<li>
-			<div class="accordion-title"><a href="#"><?php echo $content['title_accordion']; ?></a></div>
+			<div class="accordion-title"><a href="#"><?php echo $content['title_accordion']; ?></a>
+<div class="flecha-acordeon"></div>
+</div>
 			<div class="accordion-content <?php echo ( ( isset( $content['default_accordion'] ) && $content['default_accordion'] != 'open' ) || ! isset( $content['default_accordion'] ) ) ? 'default-closed' : ''; ?> clearfix">
 				<?php
 					if ( isset( $content['text_accordion'] ) ) {

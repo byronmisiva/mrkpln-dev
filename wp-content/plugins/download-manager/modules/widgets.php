@@ -443,7 +443,7 @@ class wpdm_packageinfo_widget extends WP_Widget {
         $package_info_labels = array(
             'download_count' => 'Total Downloads',
             'view_count' => 'Total Views',
-            'create_date' => 'Publish Date',
+            'create_date' => 'Fecha publicacionº',
             'update_date' => 'Last Updated',
             'package_size' => 'Size',
         );

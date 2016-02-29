@@ -207,7 +207,7 @@ input[type=reset], input[type=submit], button {
 
 /* form input:hover */
 input[type=reset]:hover, input[type=submit]:hover, button:hover {
-	background: #FF7F5E;
+	background: #cf2026;
 	color: #fff;
 }
 
@@ -2433,12 +2433,6 @@ CLEAR & ALIGNMENT
 	display: table-cell;
 }
 
-.pagewidth, .section-inner {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 1064px;
-}
-
 /* clearfix */
 .clearfix:after, .widget li:after, #body:after, #footer:after, footer:after, .pagenav:after, #main-nav:after, .menu:after, #content:after
 { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
@@ -2447,9 +2441,3 @@ CLEAR & ALIGNMENT
 /* clearfix for ie7 */
 .clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, #content
 { display: block; zoom: 1; }
-
-@media (min-width: 1200px) {
-	.w3eden .container {
-		width: 970px;
-	}
-}

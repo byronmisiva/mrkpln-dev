@@ -2492,12 +2492,12 @@ function wpdm_embed_category($params = array('id' => '', 'items_per_page' => 10,
     $order_field = " " . __(ucwords(str_replace("_", " ", $order_field)),"wpdmpro");
     $ttitle = __('Title', 'wpdmpro');
     $tdls = __('Downloads', 'wpdmpro');
-    $tcdate = __('Publish Date', 'wpdmpro');
+    $tcdate = __('Fecha publicacion', 'wpdmpro');
     $tudate = __('Update Date', 'wpdmpro');
     $tasc = __('Asc', 'wpdmpro');
     $tdsc = __('Desc', 'wpdmpro');
     $tsrc = __('Search', 'wpdmpro');
-    $order_by_label = __('Order By','wpdmpro');
+    $order_by_label = __('Ordenar por','wpdmpro');
     if ($toolbar || get_option('__wpdm_cat_tb') == 1)
         $toolbar = <<<TBR
 

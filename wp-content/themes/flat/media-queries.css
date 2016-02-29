@@ -274,15 +274,6 @@
 		overflow: auto;
 	}
 
-	#headerwrap #main-nav {
-	    position: absolute !important;
-	    
-	}
-
-.img-llave {
-    float: right;
-}
-
 }
 
 @media screen and (max-width: 600px) {
